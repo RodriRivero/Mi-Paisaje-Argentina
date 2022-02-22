@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*   { margin: 0;
+    padding: 0;
+    font-family:'Comfortaa', cursive;
+}
+
+.jumbotron{
+    background-image: url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0;
+    border-radius: 0%;
+}
+
+.btn-info{
+    background-color: rgb(141, 173, 194);
+    border: none;
+}
+.btn-info:hover{
+    box-shadow: white 0px 0px 15px 0px;
+    background-color: rgb(78, 78, 80);
+}
+.row-food{
+    margin-top:  150px;
+    margin-bottom: 150px;
+    gap:60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: black 0px 0px 5px 0.5px;
+}
+.card:hover{
+transform: scale(1.05);
+box-shadow: black 0px 0px 20px 0px;
+transition: all 0.75s;
+}
+
+.Footer {
+    background-color: rgb(59, 61, 61);
+    height: 110px;
+    grid-area: Footer; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+}
+ul.social {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+
+}
+li a img{
+    padding: 0 10px;
+}
+.social li a img:hover{
+    transform: translateY(-3%) scale(1.5);
+    transition: all 1s ;
+}
