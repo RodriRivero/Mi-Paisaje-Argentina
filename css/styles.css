@@ -4,13 +4,19 @@
 *  {margin: 0 ;
     padding: 0;
     font-family:'Comfortaa', cursive;
+    box-sizing: border-box;
 }
+
 main{
     padding: 0 !important;
     margin: 0 !important;
 }
 
+
+
 /* start hero */
+
+
 
 .jumbotron{
     background-image: url("https://images.unsplash.com/photo-1588388866431-15cbdbe37634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -27,8 +33,8 @@ main{
     font-size: 1rem;
     margin: 0;
     border-radius: 0%;
-
 }
+
 button {
     position: relative;
     padding: 19px 36px;
@@ -47,8 +53,9 @@ button span {
     letter-spacing: 8px;
     z-index: 1;
 }
+
 button span a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: aliceblue;
 }
 
@@ -89,6 +96,7 @@ button .liquid::after {
 
 button:hover .liquid {
     top: -120px;
+    color: #343a40;
 }
 
 @keyframes animate {
@@ -100,11 +108,17 @@ button:hover .liquid {
     transform: translate(-50%, -75%) rotate(360deg);
     }
 }
+
 /* end hero */
 
 
 
+
+
+
  /* <!-- start enlaces secciones --> */
+
+
 .contenedor figure{
     flex-wrap: wrap;
     position:relative;
@@ -114,6 +128,7 @@ button:hover .liquid {
     overflow: hidden;
     margin: 0 auto;
 }
+
 .row {
     display: flex;
     flex-direction:row;
@@ -122,6 +137,7 @@ button:hover .liquid {
     padding: 0;
 
 }
+
 .contenedor figure img{
     display: flex;
     align-items: center;
@@ -130,7 +146,8 @@ button:hover .liquid {
     height: 100%;
     transition: all 400ms ease-out;
     will-change: transform;
-    }
+}
+
 .contenedor figure .capa{
     position: absolute;
     top: 0;
@@ -142,28 +159,31 @@ button:hover .liquid {
     visibility: hidden;
     text-align: center;
 }
+
 .contenedor figure:hover > .capa {
     opacity: 1;
     visibility: visible;
     text-align: center;
 }
+
 .contenedor figure:hover > .capa h3{
     margin-top: 70px;
     margin-bottom: 15px;
     text-align: center;
-
 }
+
 .contenedor figure:hover > img{
     transform: scale(1.3);
 }
+
 .contenedor figure .capa h3{
     color: #fff;
     font-weight: 500;
     margin-bottom: 120px;
     transition: all 400ms ease-out;
     margin-top: 20px;
-
 }
+
 .contenedor figure .capa p{
     color: #fff;
     font-size: 18px;
@@ -173,11 +193,15 @@ button:hover .liquid {
     margin: auto;
     text-transform: capitalize;
 }
+
 /* <!-- end enlaces secciones --> */
 
 
 
+
+
 /* start section gastronomia */
+
 .row-food{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -192,15 +216,22 @@ button:hover .liquid {
     border-radius: 5px;
     box-shadow: black 0px 0px 5px 0.5px;
 }
+
 .card-img-top{
     height: 200px;
 }
+
 .card:hover{
 transform: scale(1.05);
 box-shadow: black 0px 0px 20px 0px;
 transition: all 400ms ease-out;
 }
+
 /* end section gastronomia */
+
+
+
+
 
 
 
@@ -214,12 +245,85 @@ transition: all 400ms ease-out;
 /* end galery */
 
 
+/* start videos */
+
+
+/* end videos */
+
+
+
+/* start contacto */
+
+.contact{
+    background: url(https://images.unsplash.com/photo-1600047464155-526eae97abf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 91vh;
+}
+
+.head{
+    background-color: #343a40;;
+    border-radius: 5px;
+    margin-top: -0px;
+    -webkit-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+-moz-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+}
+
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0 ;
+    border-bottom: 1px solid #343a40; ;
+}
+
+.effect-1 ~ .focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color:#343a40; ;
+    transition: 0.4s;
+}
+
+.effect-1:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn1{
+    background: #8ea8fc;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px ;
+    height: 60px;
+    width: 145px;
+}
+
+.btn1:hover{
+    -webkit-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+}
+
+/* end contacto */
+
+
+
+
+
+
+
 
  /* start footer */
 
 
 .Footer {
-    background-color: rgb(59, 61, 61);
+    background-color: #343a40;;
     height: 110px;
     grid-area: Footer; 
     display: flex;
@@ -238,7 +342,6 @@ ul.social {
     align-items: center;
     list-style: none;
     text-decoration: none;
-
 }
 li a img{
     padding: 0 10px;
