@@ -1,0 +1,11 @@
+
+.pie {
+    @extend .Footer;
+    height: 110px;
+> ul {
+    @extend.social;
+    
+}
+
+
+}

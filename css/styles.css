@@ -6,7 +6,6 @@
     font-family:'Comfortaa', cursive;
     box-sizing: border-box;
 }
-
 main{
     padding: 0 !important;
     margin: 0 !important;
@@ -137,7 +136,6 @@ button:hover .liquid {
     padding: 0;
 
 }
-
 .contenedor figure img{
     display: flex;
     align-items: center;
@@ -147,7 +145,6 @@ button:hover .liquid {
     transition: all 400ms ease-out;
     will-change: transform;
 }
-
 .contenedor figure .capa{
     position: absolute;
     top: 0;
@@ -238,6 +235,11 @@ transition: all 400ms ease-out;
 /* start galery */
 .item{
     transition: .5s ease-in-out;
+    gap: 5px 5px;
+}
+.nameplace{
+    text-align: center;
+    margin-top: 10px;
 }
 .item:hover{
     filter:brightness(80%) ;
@@ -262,7 +264,7 @@ transition: all 400ms ease-out;
 }
 
 .head{
-    background-color: #343a40;;
+    background-color: #343a40;
     border-radius: 5px;
     margin-top: -0px;
     -webkit-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);

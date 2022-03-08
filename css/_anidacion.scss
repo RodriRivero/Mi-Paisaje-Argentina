@@ -1,0 +1,23 @@
+
+
+button {
+    position: relative;
+    padding: 19px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+    button span {
+        position: relative;
+        color:$color1;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 8px;
+        z-index: 1;
+    }
+    button span a{
+        text-decoration: none !important;
+        color:$color1;
+    }
+}

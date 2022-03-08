@@ -1,0 +1,325 @@
+
+@import"_anidacion";
+@import"_base";
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/*variables*/
+
+$color1:white;
+$color2:#343a40;
+$color3:black;
+$color4:#8ea8fc ;
+$color5:rgba(90, 127, 228, 0.5);
+$color6:rgba(0,103,123,0.7);
+
+$size1:100%;
+$size2:200%;
+
+$valor1:0;
+$valor2:30px;
+
+$mode:flex;
+
+$place:center;
+
+
+
+
+
+*  {margin:$valor1 ;
+    padding: $valor1;
+    font-family:'Comfortaa', cursive;
+    box-sizing: border-box;
+    main{
+        padding: $valor1 !important;
+        margin:$valor1!important;
+    }
+}
+
+
+/* start hero */
+
+.jumbotron{
+    background-size: cover;
+    background-position: $place;
+    height: 800px;
+    color: $color1;
+    text-shadow: $color3 0px 0px 6px ;
+    text-align:$place;
+    display: $mode;
+    flex-direction: column;
+    justify-content:$place;
+    align-items:$place;
+    font-size: 1rem;
+    margin: $valor1;
+    border-radius: $valor1;
+}
+
+
+
+
+button .liquid {
+    position: absolute;
+    top: -80px;
+    left: $valor1;
+    width:$size1;
+    height:$size2;
+    background:$color4;
+    box-shadow: inset $valor1 $valor1 50px rgba($valor1, $valor1, 0, 0.5);
+    transition: .5s;
+    button .liquid::after,
+button .liquid::before {
+    content: '';
+    width:$size2;
+    height:$size2;
+    position: absolute;
+    top: $valor1;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: $color1;
+}
+button .liquid::before {
+    border-radius: 35%;
+    background:$color1;
+    animation: animate 5s linear infinite;
+}
+button .liquid::after {
+    border-radius: 40%;
+    background: $color5;
+    animation: animate 10s linear infinite;
+}
+button:hover .liquid {
+    top: -120px;
+    color: $color2;
+}
+
+@keyframes animate {
+    0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+}
+
+
+/* end hero */
+
+ /* <!-- start enlaces secciones --> */
+
+.contenedor figure{
+    flex-wrap: wrap;
+    position:relative;
+    height: 350px;
+    cursor: pointer;
+    width: 475.7px; 
+    overflow: hidden;
+    margin: $valor1 auto;
+    .row {
+        display:$mode;
+        flex-direction:row;
+        flex-flow: wrap;
+        margin:$valor1;
+        padding:$valor1;
+        img{
+            display:$mode;
+            align-items: $place;
+            justify-content: space-between;
+            width: $size1;
+            height: $size1;
+            transition: all 400ms ease-out;
+            will-change: transform;
+            .capa{
+                position: absolute;
+                top: $valor1;
+                width: $size1;
+                height: $size1;
+                background: rgba(0,103,123,0.7);
+                transition: all 400ms ease-out;
+                opacity:$valor1;
+                visibility: hidden;
+                text-align:$place;
+            }
+        }
+    
+    }
+    
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+        text-align:$place;
+        .capa h3{
+            margin-top: 70px;
+            margin-bottom: 15px;
+            text-align:$place;
+        }
+        img{
+            transform: scale(1.3);
+        }
+    }
+    
+}
+
+
+.contenedor figure .capa h3{
+    color: $color1;
+    font-weight: 500;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 20px;
+    .capa p{
+        color: $color1;
+        font-size: 18px;
+        line-height: 1.5;
+        width: $size1;
+        max-width: 220px;
+        margin: auto;
+        text-transform: capitalize;
+    }
+}
+
+
+/* <!-- end enlaces secciones --> */
+
+/* start section gastronomia */
+
+.row-food{
+    margin-top: $valor2;
+    margin-bottom: $valor2;
+    gap:$valor2;
+    display:$mode;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    .card{
+        border-radius: 5px;
+        box-shadow: $color3 0px 0px 5px 0.5px;
+        .card-img-top{
+            height: 200px;
+        }
+        
+        .card:hover{
+        transform: scale(1.05);
+        box-shadow: $color3 0px 0px 20px 0px;
+        transition: all 400ms ease-out;
+        }
+    }
+}
+
+
+
+/* end section gastronomia */
+
+
+/* start galery */
+.item{
+    transition: .5s ease-in-out;
+    .item:hover{
+        filter:brightness(80%) ;
+    }
+}
+
+/* end galery */
+
+/* start contacto */
+
+.contact{
+    background: url("https://images.unsplash.com/photo-1600047464155-526eae97abf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80") no-repeat;
+    background-size: $size1  $size1;
+    width: $size1;
+    height: 91vh;
+    .head{
+        background-color:$color2;
+        border-radius: 5px;
+        margin-top: $valor1;
+        -webkit-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+    box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+    }
+    .btn1{
+        background:$color4;
+        color: $color1;
+        outline: none;
+        border: none;
+        border-radius: 5px ;
+        height: 60px;
+        width: 145px;
+        .btn1:hover{
+            -webkit-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+            -moz-box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+            box-shadow: 1px 10px 22px 1px rgba(0,0,0,0.38);
+        }
+    }
+}
+
+.effect-1{
+    border:$valor1;
+    outline: none;
+    width: $size1;
+    padding: 7px $valor1 ;
+    border-bottom: 1px solid $color2 ;
+    .effect-1 ~ .focus-border{
+        position: absolute;
+        bottom:$valor1;
+        left: 50%;
+        width: $valor1;
+        height: 2px;
+        background-color:$color2;
+        transition: 0.4s;
+        .effect-1:focus ~ .focus-border{
+            width: 100%;
+            transition: 0.4s;
+            left:$valor1;
+        }
+    }
+}
+
+
+
+
+
+/* end contacto */
+
+
+ /* start footer */
+
+/*mixin*/
+
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    
+}
+/*mixin*/
+
+.Footer {
+    background-color:$color2;
+    height: 110px;
+    grid-area: Footer; 
+    @include flex;
+    flex-direction: column;
+    justify-content:$place;
+    color:$color1;
+    
+}
+ul.social {
+    @include flex;
+    flex-direction: row;
+    justify-content:$place;
+}
+li a img{
+    padding: $valor1 10px;
+}
+.social li a img:hover{
+    transform: translateY(-3%) scale(1.5);
+    transition: all 1s ;
+}
+
+/* end footer */
+
+
