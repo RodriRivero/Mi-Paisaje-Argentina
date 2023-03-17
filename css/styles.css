@@ -118,11 +118,11 @@ button:hover .liquid {
  /* <!-- start enlaces secciones --> */
 
 
-.contenedor figure{
+ .contenedor figure{
     position: relative;
-    height: 35vh; /* change to percentage value */
+    height: 75vh; /* change to percentage value */
     cursor: pointer;
-    width: 50vw; /* change to percentage value */
+    width: 100vw; /* change to percentage value */
     overflow: hidden;
     margin: 0 auto;
 }
@@ -165,7 +165,7 @@ button:hover .liquid {
 
 .contenedor figure:hover > .capa h3{
     margin-top: 2vh; /* change to percentage value */
-    margin-bottom: 1vh; /* change to percentage value */
+    margin-bottom: 20vh; /* change to percentage value */
     text-align: center;
 }
 
@@ -183,7 +183,7 @@ button:hover .liquid {
 
 .contenedor figure .capa p{
     color: #fff;
-    font-size: 3vh; /* change to percentage value */
+    font-size: 4vh; /* change to percentage value */
     line-height: 1.5;
     width: 90%; /* change to percentage value */
     max-width: 22vw; /* change to percentage value */
@@ -199,11 +199,11 @@ button:hover .liquid {
     }
     .contenedor figure .capa h3 {
         margin-bottom: 5vh;
-        font-size: 4vh;
+        font-size: 5vh;
     }
     .contenedor figure .capa p {
         font-size: 2vh;
-    }
+  }
 }
 
 /* <!-- end enlaces secciones --> */
