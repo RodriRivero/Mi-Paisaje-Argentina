@@ -119,11 +119,10 @@ button:hover .liquid {
 
 
 .contenedor figure{
-    flex-wrap: wrap;
-    position:relative;
-    height: 350px;
+    position: relative;
+    height: 35vh; /* change to percentage value */
     cursor: pointer;
-    width: 475.7px; 
+    width: 50vw; /* change to percentage value */
     overflow: hidden;
     margin: 0 auto;
 }
@@ -134,17 +133,18 @@ button:hover .liquid {
     flex-flow: wrap;
     margin: 0;
     padding: 0;
-
 }
+
 .contenedor figure img{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* change to center */
     width: 100%;
     height: 100%;
     transition: all 400ms ease-out;
     will-change: transform;
 }
+
 .contenedor figure .capa{
     position: absolute;
     top: 0;
@@ -164,8 +164,8 @@ button:hover .liquid {
 }
 
 .contenedor figure:hover > .capa h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: 2vh; /* change to percentage value */
+    margin-bottom: 1vh; /* change to percentage value */
     text-align: center;
 }
 
@@ -175,20 +175,35 @@ button:hover .liquid {
 
 .contenedor figure .capa h3{
     color: #fff;
-    font-weight: 500;
-    margin-bottom: 120px;
+    font-weight: 800;
+    margin-bottom: 8vh; /* change to percentage value */
     transition: all 400ms ease-out;
-    margin-top: 20px;
+    margin-top: 2vh; /* change to percentage value */
 }
 
 .contenedor figure .capa p{
     color: #fff;
-    font-size: 18px;
+    font-size: 3vh; /* change to percentage value */
     line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
+    width: 90%; /* change to percentage value */
+    max-width: 22vw; /* change to percentage value */
+    margin: 0 auto;
     text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+   /* adjust properties for screens with width up to 768px */
+    .contenedor figure {
+        width: 100vw;
+        height: 60vh;
+    }
+    .contenedor figure .capa h3 {
+        margin-bottom: 5vh;
+        font-size: 4vh;
+    }
+    .contenedor figure .capa p {
+        font-size: 2vh;
+    }
 }
 
 /* <!-- end enlaces secciones --> */
